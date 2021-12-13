@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BMI Analyzer</string>
+    <string name="next">Next</string>
+    <string name="wellcom">Welcome Back</string>
+    <string name="already">if you already have an account, log in</string>
+    <string name="signUp">Sign Up</string>
+    <string name="logIn">LOG IN</string>
+    <string name="creat">Creat New Account</string>
+    <string name="dont">if you do not already have an account</string>
+    <string name="haveAccount">You Have An Account?</string>
+    <string name="complete">Complete Your</string>
+    <string name="save">Save Data</string>
+
+
+</resources>
