@@ -10,6 +10,12 @@
     <string name="haveAccount">You Have An Account?</string>
     <string name="complete">Complete Your</string>
     <string name="save">Save Data</string>
+    <string name="current">Current Status</string>
+    <string name="btn_next"><u>Next</u></string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="header">BMI Analyzer</string>
+    <string name="hi_message">Welcome Back</string>
+    <string name="Guidance_message">if you already have an account, log in</string>
 
 
 </resources>

@@ -9,7 +9,24 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".complete_Information">
-
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="50dp"
+        />
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -48,7 +65,7 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="174dp"
+            android:layout_width="183dp"
             android:layout_height="48dp"
             android:layout_weight="1"
             android:gravity="center_horizontal|center_vertical"
@@ -63,7 +80,7 @@
             android:orientation="horizontal">
 
             <Space
-                android:layout_width="80dp"
+                android:layout_width="54dp"
                 android:layout_height="match_parent" />
 
             <RadioButton
@@ -87,7 +104,7 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="55dp"
+            android:layout_width="86dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_horizontal|center_vertical"
@@ -101,7 +118,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/btn_weightDecre"
+            android:id="@+id/weightDecre"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="48dp"
             android:layout_height="match_parent"
@@ -110,7 +127,7 @@
             android:textColor="#1C2F8F" />
 
         <EditText
-            android:id="@+id/editText_weight"
+            android:id="@+id/et_weight"
             android:layout_width="47dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -120,7 +137,7 @@
             android:text="0" />
 
         <Button
-            android:id="@+id/btn_weightIncre"
+            android:id="@+id/weightIncre"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="48dp"
             android:layout_height="match_parent"
@@ -149,7 +166,7 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="55dp"
+            android:layout_width="86dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_horizontal|center_vertical"
@@ -163,7 +180,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/btn_lengthDecre"
+            android:id="@+id/lengthDecre"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="48dp"
             android:layout_height="match_parent"
@@ -172,7 +189,7 @@
             android:textColor="#1C2F8F" />
 
         <EditText
-            android:id="@+id/editText_lenght"
+            android:id="@+id/ed_lenght"
             android:layout_width="47dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -182,7 +199,7 @@
             android:text="0" />
 
         <Button
-            android:id="@+id/btn_lengthIncre"
+            android:id="@+id/lengthIncre"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="48dp"
             android:layout_height="match_parent"
@@ -243,7 +260,7 @@
         android:layout_width="match_parent"
         android:layout_height="44dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/save"
         android:layout_width="271dp"
         android:layout_height="wrap_content"

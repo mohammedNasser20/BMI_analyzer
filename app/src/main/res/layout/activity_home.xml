@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".foodList">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background"
         android:gravity="center"
-        android:text="@string/app_name"
+        android:text="@string/header"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -24,19 +23,112 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView23"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="119dp"
-        android:gravity="center"
-        android:text="Food List"
-        android:textColor="@color/background"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/foodList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="Hi, Mohammed"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:text="Current status"
+            android:textColor="@color/background"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@drawable/blue_border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Normal (Stay Good)"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="bottom"
+            android:text="Old status"
+            android:textColor="@color/background"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/status_List"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/btn_shape"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_addfood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_shape"
+                android:text="Add Food"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_addRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_shape"
+                android:text="Add Record"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_viewFood"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_shape"
+            android:text="View Food"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txv_Test"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
 
 </LinearLayout>
