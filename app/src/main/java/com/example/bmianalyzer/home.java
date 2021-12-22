@@ -63,5 +63,15 @@ public class home extends AppCompatActivity {
             }
         });
 
+        //button
+        Button log_out_button = findViewById(R.id.log_out);
+        log_out_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this, logIn.class);
+                finish();
+                startActivity(intent);
+            }
+        });
     }
 }
